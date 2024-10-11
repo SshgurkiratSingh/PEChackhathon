@@ -5,6 +5,7 @@ export default function AboutPage() {
   return (
     <section className="bg-gray-100 dark:bg-gray-900 py-12">
       <div className="w-full max-w-screen-xl mx-auto px-6 lg:px-12">
+        
         {/* Section Title */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-gray-800 dark:text-white mb-4">
@@ -17,6 +18,7 @@ export default function AboutPage() {
 
         {/* Content Section */}
         <div className="flex flex-col lg:flex-row items-center lg:space-x-12">
+          
           {/* Image Section */}
           <div className="lg:w-1/2 mb-8 lg:mb-0">
             <Image
@@ -34,10 +36,14 @@ export default function AboutPage() {
               Our Mission
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-              We are passionate about creating a platform that helps users solve real-world problems using cutting-edge technology. Our goal is to innovate, inspire, and build solutions that make an impact.
+              We are passionate about creating a platform that helps users solve real-world 
+              problems using cutting-edge technology. Our goal is to innovate, inspire, and 
+              build solutions that make an impact.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-              Our journey started with a simple idea and has evolved into a thriving project. Along the way, we've gathered a talented team of developers, designers, and visionaries dedicated to pushing the boundaries of what is possible.
+              Our journey started with a simple idea and has evolved into a thriving project. 
+              Along the way, we've gathered a talented team of developers, designers, and 
+              visionaries dedicated to pushing the boundaries of what is possible.
             </p>
 
             {/* Highlight Section */}
@@ -51,12 +57,15 @@ export default function AboutPage() {
             <div className="mt-6">
               <a
                 href="/contact"
-                className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out"
+                className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 
+                text-white font-semibold rounded-full shadow-lg hover:shadow-xl 
+                hover:scale-105 transition-transform duration-300 ease-in-out"
               >
                 Contact Us
               </a>
             </div>
           </div>
+
         </div>
       </div>
     </section>
