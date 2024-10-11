@@ -3,61 +3,59 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <section className="bg-gray-100 dark:bg-gray-900 py-12">
-      <div className="w-full max-w-screen-xl mx-auto px-6 lg:px-12">
+    <section className="bg-gray-100 dark:bg-gray-900 py-4 flex justify-center items-center min-h-screen">
+      <div className="w-full max-w-lg mx-auto p-4 lg:p-8 bg-gray-100 dark:bg-gray-900 rounded-lg shadow-lg">
         
         {/* Section Title */}
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-gray-800 dark:text-white mb-4">
+        <div className="text-center mb-4">
+          <h1 className="text-3xl font-extrabold text-gray-800 dark:text-white mb-2">
             About Us
           </h1>
-          <p className="text-gray-600 dark:text-gray-300 text-lg">
+          <p className="text-gray-600 dark:text-gray-300 text-sm font-semibold">
             Learn more about our journey, mission, and the team behind this project.
           </p>
         </div>
 
         {/* Content Section */}
-        <div className="flex flex-col lg:flex-row items-center lg:space-x-12">
+        <div className="flex flex-col items-center">
           
-          {/* Image Section */}
-          <div className="lg:w-1/2 mb-8 lg:mb-0">
-            <Image
-              src="/about-image.jpg"
-              alt="About Us Image"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-lg w-full h-auto"
-            />
-          </div>
-
-          {/* Text Section */}
-          <div className="lg:w-1/2">
-            <h2 className="text-4xl font-semibold text-gray-800 dark:text-white mb-6">
+          {/* Text and Image Section */}
+          <div className="text-center mb-4">
+            <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-3">
               Our Mission
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-              We are passionate about creating a platform that helps users solve real-world 
-              problems using cutting-edge technology. Our goal is to innovate, inspire, and 
-              build solutions that make an impact.
+            <p className="text-sm text-gray-600 dark:text-gray-300 mb-3 font-medium">
+              We are passionate about creating a platform that helps users solve 
+              real-world problems using cutting-edge technology.
             </p>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-              Our journey started with a simple idea and has evolved into a thriving project. 
-              Along the way, we've gathered a talented team of developers, designers, and 
-              visionaries dedicated to pushing the boundaries of what is possible.
+
+            {/* Image Section */}
+            <div className="mb-3">
+              <Image
+                src="/about-image.jpg"
+                alt="About Us Image"
+                width={250}
+                height={180}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+
+            <p className="text-sm text-gray-600 dark:text-gray-300 mb-3 font-medium">
+              Our journey started with a simple idea and has evolved into a thriving project.
             </p>
 
             {/* Highlight Section */}
-            <div className="p-4 bg-blue-50 dark:bg-blue-900 rounded-lg shadow-md mb-4">
-              <p className="text-blue-600 dark:text-blue-200 font-semibold">
+            <div className="p-2 bg-blue-50 dark:bg-blue-900 rounded-lg shadow-md mb-3">
+              <p className="text-blue-600 dark:text-blue-200 font-semibold text-sm">
                 "Innovation is at the heart of everything we do."
               </p>
             </div>
 
             {/* Call to Action */}
-            <div className="mt-6">
+            <div className="mt-3">
               <a
                 href="/contact"
-                className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 
+                className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 
                 text-white font-semibold rounded-full shadow-lg hover:shadow-xl 
                 hover:scale-105 transition-transform duration-300 ease-in-out"
               >
@@ -65,7 +63,6 @@ export default function AboutPage() {
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </section>
