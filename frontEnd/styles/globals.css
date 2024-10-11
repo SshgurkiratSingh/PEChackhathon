@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .gradient-text {
-    background: -webkit-linear-gradient(27deg,#4014df, #c22323, #4014df, #00c0ff);
+    background: -webkit-linear-gradient(27deg,#3ddf14, #c22323, #4014df, #00c0ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 200%; /* To allow movement */
