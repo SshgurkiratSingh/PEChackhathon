@@ -28,7 +28,7 @@ const NavigationBar = () => {
       isBordered
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      className="rounded-xl shadow-lg bg-white dark:bg-gray-900"
+      className="rounded-xl shadow-lg bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-gray-800"
     >
       {/* Left side (Logo) */}
       <NavbarContent justify="start">
@@ -40,9 +40,10 @@ const NavigationBar = () => {
       </NavbarContent>
 
       {/* Mobile Menu Toggle */}
-      <NavbarContent className="sm:hidden" justify="start">
+      <NavbarContent className="sm:hidden" justify="end" aria-label="Menu toggle">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="transition-transform duration-500 transform hover:scale-125 focus:outline-none"
         />
       </NavbarContent>
 
@@ -51,40 +52,38 @@ const NavigationBar = () => {
         {items.map((item, index) => (
           <NavbarItem key={`${item.name}-${index}`}>
             <Link href={item.href} passHref>
-            <Button
-  light
-  color="primary"
-  className="relative bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full px-6 py-3 shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-400 focus:ring-opacity-50 before:absolute before:-inset-0.5 before:bg-gradient-to-r before:from-purple-500 before:to-blue-600 before:rounded-full before:blur-md before:opacity-0 hover:before:opacity-100"
->
-  {item.name}
-</Button>
-
+              <Button
+                light
+                className="relative bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold rounded-full px-6 py-3 shadow-lg hover:shadow-2xl transition-transform duration-300 ease-in-out hover:scale-105 hover:from-purple-600 hover:to-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-400 focus:ring-opacity-50"
+              >
+                {item.name}
+              </Button>
             </Link>
           </NavbarItem>
         ))}
       </NavbarContent>
 
       {/* Right side (Theme Icon) */}
-      <NavbarContent justify="end">
+      <NavbarContent justify="end" className="pr-4">
         <NavbarItem>
           <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
 
       {/* Mobile Menu */}
-      <NavbarMenu>
+      <NavbarMenu className="bg-gray-100 dark:bg-gray-800">
         {items.map((item, index) => (
           <NavbarMenuItem key={`${item.name}-${index}`}>
             <Link href={item.href} passHref>
               <Button
                 auto
                 light
-                className={`w-full hover:bg-gray-200 dark:hover:bg-gray-800 ${
+                className={`w-full py-3 transition-colors duration-300 hover:bg-gray-300 dark:hover:bg-gray-700 ${
                   index === 2
-                    ? "text-warning"
+                    ? "text-yellow-500"
                     : index === items.length - 1
-                    ? "text-danger"
-                    : "text-foreground"
+                    ? "text-red-500"
+                    : "text-gray-800 dark:text-gray-200"
                 }`}
               >
                 {item.name}
