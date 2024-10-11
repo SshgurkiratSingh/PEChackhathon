@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.gradient-text {
+    background: -webkit-linear-gradient(27deg,#4014df, #c22323, #4014df, #00c0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%; /* To allow movement */
+    animation: gradientAnimation 4s ease-in-out infinite;
+}
+body {
+    /* background: linear-gradient(150deg, rgba(136, 15, 15, 0.801) , rgba(117, 50, 138, 0.603), rgba(30, 83, 153, 0.74) ); */
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.gradient-text2 {
+    background: -webkit-linear-gradient(27deg,#51ff00, #00ccff, #eeff00, #ff00f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%; /* To allow movement */
+    animation: gradientAnimation 4s ease-in-out infinite;
+}.gradient-text3 {
+    background: -webkit-linear-gradient(27deg,#ff7300, #f80707, #8d20b8, #ff00f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%; /* To allow movement */
+    animation: gradientAnimation 4s ease-in-out infinite;
+}
