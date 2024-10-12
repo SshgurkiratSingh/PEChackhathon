@@ -14,35 +14,35 @@ export default function AboutPage() {
     <section className="bg-gray-100 dark:bg-gray-900 py-8 flex justify-center items-center min-h-screen">
       <div
         className={`w-full max-w-lg mx-auto p-6 lg:p-10 bg-white dark:bg-gray-800 rounded-lg shadow-xl transition-shadow hover:shadow-2xl 
-        transform transition-all duration-700 ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
+        transform transition-all duration-700 ease-in-out ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
       >
-        
         {/* Section Title */}
         <div className="text-center mb-6">
           <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-800 dark:text-white mb-4">
             About Us
           </h1>
           <p className="text-gray-600 dark:text-gray-300 text-sm lg:text-base font-medium leading-relaxed">
-            Discover our journey, mission, and the dedicated team behind this project.
+            Discover our journey, mission, and the dedicated team behind this
+            project.
           </p>
         </div>
 
         {/* Content Section */}
         <div className="flex flex-col items-center">
-          
           {/* Text and Image Section */}
           <div className="text-center mb-6">
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
               Our Mission
             </h2>
             <p className="text-sm lg:text-base text-gray-600 dark:text-gray-300 mb-5 font-medium leading-relaxed">
-              We are dedicated to building a platform that empowers users to tackle real-world challenges through innovative technology.
+              We are dedicated to building a platform that empowers users to
+              tackle real-world challenges through innovative technology.
             </p>
 
             {/* Image Section */}
             <div className="mb-5">
               <Image
-                src=""
+                src="/about-image.jpg"
                 alt="About Us Image"
                 width={250}
                 height={180}
@@ -51,7 +51,8 @@ export default function AboutPage() {
             </div>
 
             <p className="text-sm lg:text-base text-gray-600 dark:text-gray-300 mb-5 font-medium leading-relaxed">
-              Our humble beginnings have grown into a dynamic project aimed at making a real difference.
+              Our humble beginnings have grown into a dynamic project aimed at
+              making a real difference.
             </p>
 
             {/* Highlight Section */}
