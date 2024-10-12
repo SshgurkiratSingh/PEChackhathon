@@ -19,7 +19,7 @@ const NavigationBar = () => {
   const items = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Page 1", href: "/page1" },
+    { name: "Page 1", href: "/login" },
     { name: "Page 2", href: "/page2" },
   ];
 
