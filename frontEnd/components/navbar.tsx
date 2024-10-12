@@ -31,13 +31,14 @@ const NavigationBar = () => {
       className="rounded-xl shadow-lg bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-gray-800"
     >
       {/* Left side (Logo) */}
-      <NavbarContent justify="start">
-        <NavbarBrand>
-          <p className="font-bold text-inherit gradient-text text-2xl">
-            Hackathon
-          </p>
-        </NavbarBrand>
-      </NavbarContent>
+      <NavbarContent justify="start" className="flex justify-start">
+  <NavbarBrand>
+    <p className="font-bold text-inherit gradient-text text-2xl text-left">
+      Hackathon
+    </p>
+  </NavbarBrand>
+</NavbarContent>
+
 
       {/* Mobile Menu Toggle */}
       <NavbarContent className="sm:hidden" justify="end" aria-label="Menu toggle">
