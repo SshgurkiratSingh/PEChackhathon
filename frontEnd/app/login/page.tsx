@@ -8,7 +8,7 @@ export default function LoginPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   // Hardcoded credentials for demo purposes (replace with real authentication logic)
-  const validEmail = "123@example.com";
+  const validEmail = "12@example.com";
   const validPassword = "password123";
 
   const handleLogin = (e) => {
