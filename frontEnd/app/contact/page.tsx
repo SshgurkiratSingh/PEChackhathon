@@ -1,6 +1,6 @@
 "use client";
 
-export default function ContactPage() {
+export default function Home() {
   return (
     <section className="bg-gray-100 dark:bg-gray-900 py-8 flex justify-center items-center min-h-screen">
       <div className="w-full max-w-lg mx-auto p-6 lg:p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
